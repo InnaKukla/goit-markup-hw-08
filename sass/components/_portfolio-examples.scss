@@ -29,10 +29,13 @@
 }
 
 .portfolio-examples__card {
-  padding: 20px 24px;
+  padding: 20px 18px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+  @media screen and (min-width: 1200px) {
+    padding: 20px 24px;
+  }
 }
 
 .portfolio-examples__item {

@@ -41,15 +41,23 @@
 .filter-button__item {
   margin-bottom: 21px;
   margin-left: 8px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: auto;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40 px;
   }
 }
 
 .filter-button__button {
-  min-width: 73px;
-  min-height: 38px;
   padding: 6px 22px;
-  background: var(--background-main-color);
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #212121;
+  background-color: #f5f4fa;
   border-radius: 4px;
+  border: transparent;
+  transition-property: box-shadow, background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
