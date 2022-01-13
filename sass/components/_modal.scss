@@ -39,7 +39,7 @@
   }
   @media screen and (min-width: 480px) {
     position: absolute;
-    mix-width: 450px;
+    min-width: 450px;
   }
   @media screen and (min-width: 1200px) {
     width: 528px;
@@ -166,16 +166,13 @@ button.modal__icon {
 
 .checkbox__text {
   font-weight: 400;
-  font-size: 7px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  padding-left: 7px;
   display: flex;
   align-items: center;
-  @media screen and (min-width: 768px) {
-    font-size: 10px;
-  }
+  justify-content: space-evenly;
   @media screen and (min-width: 1200px) {
     font-size: 14px;
   }
@@ -186,7 +183,6 @@ button.modal__icon {
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
-  margin-right: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,6 +209,5 @@ button.modal__icon {
 
 .checkbox-box-polisy-document__link {
   color: #2196f3;
-  margin-left: 4px;
   text-decoration: underline;
 }

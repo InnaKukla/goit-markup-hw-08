@@ -165,12 +165,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .header-nav__list {
-    margin-left: 93px;
-  }
-}
-
 .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,6 +305,13 @@ img {
   margin-left: auto;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contacts {
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+}
+
 .header-contacts__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -319,7 +320,6 @@ img {
   .header-contacts__item:not(:last-child) {
     margin-right: 15px;
     margin-bottom: 10px;
-    margin-top: 21px;
   }
 }
 
@@ -377,6 +377,7 @@ img {
   padding-bottom: 48px;
   padding-left: 40px;
   overflow: hidden;
+  visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -602,7 +603,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .section.particular {
-    padding-bottom: 60px;
+    padding-bottom: 0;
   }
 }
 
@@ -1277,6 +1278,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscription-form__input {
+    width: 358px;
+  }
+}
+
 .subscription-form__button {
   margin-top: 0;
   margin-bottom: 0;
@@ -1328,10 +1335,6 @@ img {
   color: var(--second-icon-color);
 }
 
-.portfolio__buttons {
-  margin-bottom: 50px;
-}
-
 .filter-button__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1350,18 +1353,24 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-button__list {
+    margin-bottom: 50px;
   }
 }
 
 .filter-button__item {
-  margin-bottom: 21px;
+  margin-bottom: 15px;
   margin-left: 8px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .filter-button__item {
-    margin-bottom: 40 px;
+    margin-bottom: 0;
   }
 }
 
@@ -1384,6 +1393,16 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-examples {
+  margin-top: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-examples {
+    margin-top: 0;
+  }
 }
 
 .portfolio-examples-card__title {
@@ -1428,13 +1447,10 @@ img {
           box-sizing: border-box;
 }
 
-@media screen and (min-width: 768px) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: -30px;
+@media screen and (min-width: 1200px) {
+  .portfolio-examples__card {
+    padding: 20px 24px;
+  }
 }
 
 .portfolio-examples__item {
@@ -1536,7 +1552,7 @@ img {
 @media screen and (min-width: 480px) {
   .modal {
     position: absolute;
-    mix-width: 450px;
+    min-width: 450px;
   }
 }
 
@@ -1712,23 +1728,19 @@ button.modal__icon {
 
 .checkbox__text {
   font-weight: 400;
-  font-size: 7px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  padding-left: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .checkbox__text {
-    font-size: 10px;
-  }
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1742,7 +1754,6 @@ button.modal__icon {
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
-  margin-right: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1778,7 +1789,6 @@ button.modal__icon {
 
 .checkbox-box-polisy-document__link {
   color: #2196f3;
-  margin-left: 4px;
   text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */

@@ -22,10 +22,6 @@
   color: var(--second-icon-color);
 }
 
-.portfolio__buttons {
-  margin-bottom: 50px;
-}
-
 .filter-button__list {
   display: flex;
   flex-wrap: wrap;
@@ -34,15 +30,18 @@
   justify-content: start;
   @media screen and (min-width: 768px) {
     justify-content: center;
-    margin-bottom: auto;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 
 .filter-button__item {
-  margin-bottom: 21px;
+  margin-bottom: 15px;
   margin-left: 8px;
-  @media screen and (max-width: 767px) {
-    margin-bottom: 40 px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 

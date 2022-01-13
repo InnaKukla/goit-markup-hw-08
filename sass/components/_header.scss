@@ -36,9 +36,9 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 1200px) {
-    margin-left: 93px;
-  }
+  //@media screen and (min-width: 1200px) {
+  //margin-left: 93px;
+  //}
 }
 
 .header-nav {
@@ -140,6 +140,10 @@
 
 .header-contacts {
   margin-left: auto;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
 }
 .header-contacts__item:not(:last-child) {
   margin-right: 30px;
@@ -148,7 +152,6 @@
   .header-contacts__item:not(:last-child) {
     margin-right: 15px;
     margin-bottom: 10px;
-    margin-top: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -196,6 +199,7 @@
   padding-bottom: 48px;
   padding-left: 40px;
   overflow: hidden;
+  visibility: hidden;
   @media screen and (min-width: 768px) {
     display: none;
   }
